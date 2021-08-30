@@ -1,0 +1,40 @@
+digraph graphname {
+	graph [bb="0,0,341.28,92.787",
+		compound=True,
+		rank=same,
+		rankdir=LR,
+		ranksep=0.2
+	];
+	node [label="\N"];
+	n___robot_control	 [URL=__robot_control,
+		height=0.5,
+		label="/robot_control",
+		pos="76.693,20.787",
+		shape=ellipse,
+		tooltip="/robot_control",
+		width=2.1304];
+	n___stageros	 [URL=__stageros,
+		height=0.5,
+		label="/stageros",
+		pos="287.33,20.787",
+		shape=ellipse,
+		tooltip="/stageros",
+		width=1.4985];
+	n___robot_control -> n___stageros	 [URL=topic_3A__cmd_vel,
+		label="/cmd_vel",
+		lp="193.39,28.287",
+		penwidth=1,
+		pos="e,233.33,20.787 153.61,20.787 176.44,20.787 201.24,20.787 223.15,20.787"];
+	n___stageros -> n___robot_control	 [URL=topic_3A__odom,
+		label="/odom",
+		lp="193.39,10.287",
+		penwidth=1,
+		pos="e,130.1,7.7406 249,7.9288 241.28,5.7916 233.14,3.9079 225.39,2.787 197.23,-1.2834 189.67,-0.22027 161.39,2.787 154.53,3.5154 147.42,4.5704 140.36,5.8096"];
+	n___Rand_targ	 [URL=__Rand_targ,
+		height=0.5,
+		label="/Rand_targ",
+		pos="76.693,74.787",
+		shape=ellipse,
+		tooltip="/Rand_targ",
+		width=1.7151];
+}
