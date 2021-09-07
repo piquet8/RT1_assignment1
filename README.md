@@ -24,24 +24,23 @@ we can see a dynamic graph that shows what’s going on in the system:
 
 ![Rqt-graph](https://github.com/piquet8/RT1_assignment1/blob/main/rqt_graph.png)
 # How to launch
-1. Firstly, create a folder named "assignment_1" in your workspace
-2. Within the just create folder, open the terminal and run:
+1. Firstly, in your workspace, open the terminal and run:
 ```
-git clone https://github.com/piquet8/RT1_assignment1.git/
+git clone https://github.com/piquet8/assignment_1.git/
 ```
-3. Now, start the master by running:
+2. Now, start the master by running:
 ```
 roscore &
 ```
-4. Then to launch the simulation environment open a new shell tab and run the command
+3. Then to launch the simulation environment open a new shell tab and run the command
 ```
 rosrun stage_ros stageros $(rospack find assignment_1)/world/exercise.world
 ```
-5. Now we start the service node that will produce the new random coordinates, open another shell tab and digit:
+4. Now we start the service node that will produce the new random coordinates, open another shell tab and digit:
 ```
 rosrun assignment_1 rand_targ.cpp
 ```
-6. To launch the main node, open another shell tab and digit:
+5. To launch the main node, open another shell tab and digit:
 ```
 rosrun assignment_1 robot_control.cpp
 ```
