@@ -1,8 +1,5 @@
 # Research Track 1 - first assignment
 The assignment requires controlling a holonomix robot in a 2d space with a simple 2d simulator, Stage. The simulator can be launched by executing the command:
-```
-rosrun stage_ros stageros $(rospack find assignment1)/world/exercise.world
-```
 ## Expected Behaviour
 1. The robot asks for a ranom target, with both coordinates in the interval (-6.0, 6.0)
 2. The robot reaches the target
@@ -35,6 +32,19 @@ git clone https://github.com/fedehub/https://github.com/piquet8/RT1_assignment1.
 ```
 roscore &
 ```
+4. Then to launch the simulation environment open a new shell tab and run the command
+```
+rosrun stage_ros stageros $(rospack find assignment_1)/world/exercise.world
+```
+5. Now we start the service node that will produce the new random coordinates, open another shell tab and digit:
+```
+rosrun assignment_1 rand_targ.cpp
+```
+6. To launch the main node, open another shell tab and digit:
+```
+rosrun assignment_1 robot_control.cpp
+```
+The robot should appear in the simulation environment and once it reaches a target, it should move toward another direction, looking for the next one.
 
 
 
