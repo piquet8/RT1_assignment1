@@ -19,6 +19,18 @@ The second node is the service node: [rand_targ.cpp](https://github.com/piquet8/
 ## Service file
 The service file is: [Rand_targ.srv](https://github.com/piquet8/RT1_assignment1/blob/main/srv/Rand_targ.srv). It is composed by a void request and response with two float x and y 
 ## Rqt-graph
-Here we can see a dynamic graph that shows what’s going on in the system
+By running the following command:
+```
+rosrun rqt_graph rqt_graph
+```
+we can see a dynamic graph that shows what’s going on in the system:
 ![Rqt-graph](https://github.com/piquet8/RT1_assignment1/blob/main/rqt_graph.png)
+# How to launch
+1. Firstly, create a folder named "assignment_1"
+2. Within the just create folder, open the terminal and run:
+```
+git clone https://github.com/fedehub//
+```
+
+
 
