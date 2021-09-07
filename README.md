@@ -17,5 +17,8 @@ The first node is: [robot_control.cpp](https://github.com/piquet8/RT1_assignment
 ## Second node
 The second node is the service node: [rand_targ.cpp](https://github.com/piquet8/RT1_assignment1/blob/main/src/rand_targ.cpp). This node implements a random generator of two numbers between -6.0 and 6.0
 ## Service file
-The service file is: 
+The service file is: [Rand_targ.srv](https://github.com/piquet8/RT1_assignment1/blob/main/srv/Rand_targ.srv). It is composed by a void request and response with two float x and y 
+## Rqt-graph
+Here we can see a dynamic graph that shows what’s going on in the system
+
 
