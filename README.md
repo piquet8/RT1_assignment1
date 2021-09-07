@@ -20,5 +20,5 @@ The second node is the service node: [rand_targ.cpp](https://github.com/piquet8/
 The service file is: [Rand_targ.srv](https://github.com/piquet8/RT1_assignment1/blob/main/srv/Rand_targ.srv). It is composed by a void request and response with two float x and y 
 ## Rqt-graph
 Here we can see a dynamic graph that shows what’s going on in the system
-![Rqt-graph]()
+![Rqt-graph](https://github.com/piquet8/RT1_assignment1/blob/main/rqt_graph.png)
 
