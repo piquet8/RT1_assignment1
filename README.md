@@ -14,7 +14,7 @@ The first node is: [robot_control.cpp](https://github.com/piquet8/RT1_assignment
 ## Second node
 The second node is the service node: [rand_targ.cpp](https://github.com/piquet8/RT1_assignment1/blob/main/src/rand_targ.cpp). This node implements a random generator of two numbers between -6.0 and 6.0
 ## Service file
-The service file is: [Rand_targ.srv](https://github.com/piquet8/RT1_assignment1/blob/main/srv/Rand_targ.srv). It is composed by a void request and response with two float x and y 
+The service file is: [Rand_targ.srv](https://github.com/piquet8/RT1_assignment1/blob/main/srv/Rand_targ.srv). It is composed by a void request and response with two float x and y
 ## Rqt-graph
 By running the following command:
 ```
@@ -44,7 +44,11 @@ rosrun assignment_1 rand_targ.cpp
 ```
 rosrun assignment_1 robot_control.cpp
 ```
-The robot should appear in the simulation environment and once it reaches a target, it should move toward another direction, looking for the next one.
+# Report of the assignment
+## Robot behaviors
+The behaviour of the robot is very simple and minimal, it is located inside a square 'arena' of side 12 (-6,6) and every time it reaches the target position it communicates it to the user and then immediately leaves to reach the new target position chosen randomly inside the square
+## Software architecture and the architectural choices made
+The architecture of this project is very simple and is mainly based on communication via service between the main node [robot_control.cpp](https://github.com/piquet8/RT1_assignment1/blob/main/src/robot_control.cpp) and the node [rand_targ.cpp](https://github.com/piquet8/RT1_assignment1/blob/main/src/rand_targ.cpp). The main node uses a **publisher** to modify its speed through the message `geometry_msgs/Twist` and a **subscriber** through which it receives the current position of the robot through the message `nav_msgs/Odometry`, which it uses to verify the distance to the target position. Finally it uses a **service** to obtain the target position, the service file [Rand_targ.srv](https://github.com/piquet8/RT1_assignment1/blob/main/srv/Rand_targ.srv) has an empty field for the request and two float fields for the x and y values as response, these fields are filled by the relative server [rand_targ.cpp](https://github.com/piquet8/RT1_assignment1/blob/main/src/rand_targ.cpp), which is composed of two simple functions. A bool function that receives the request and through the second double function receives two random values x and y chosen in the range -6 and 6 and then stores them in the service file that makes them available to the main node
 
 
 
