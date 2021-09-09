@@ -38,11 +38,11 @@ rosrun stage_ros stageros $(rospack find assignment_1)/world/exercise.world
 ```
 4. Now we start the service node that will produce the new random coordinates, open another shell tab and digit:
 ```
-rosrun assignment_1 rand_targ.cpp
+rosrun assignment_1 rand_targ
 ```
 5. To launch the main node, open another shell tab and digit:
 ```
-rosrun assignment_1 robot_control.cpp
+rosrun assignment_1 robot_control
 ```
 # Report of the assignment
 ## Robot behaviors
