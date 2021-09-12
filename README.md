@@ -26,7 +26,7 @@ we can see a dynamic graph that shows what’s going on in the system:
 # How to launch
 1. Firstly, open the terminal, go to your workspace and in the src folder run:
 ```
-git clone https://github.com/piquet8/assignment_1.git/
+git clone https://github.com/piquet8/assignment_1.git
 ```
 2. Now, start the master by running:
 ```
