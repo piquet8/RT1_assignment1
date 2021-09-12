@@ -24,7 +24,7 @@ we can see a dynamic graph that shows what’s going on in the system:
 
 ![Rqt-graph](https://github.com/piquet8/RT1_assignment1/blob/main/rqt_graph.png)
 # How to launch
-1. Firstly, open the terminal, go to your workspace and run:
+1. Firstly, open the terminal, go to your workspace and in the src folder run:
 ```
 git clone https://github.com/piquet8/assignment_1.git/
 ```
